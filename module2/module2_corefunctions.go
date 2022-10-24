@@ -18,7 +18,7 @@ var ifBlock *ast.BlockStmt = nil
 
 // ------------------------------------- Compute functions -------------------------------
 
-//Function for reading the file
+// Function for reading the file
 func readFile() *ast.File {
 
 	_, currentFile, _, _ := runtime.Caller(1)

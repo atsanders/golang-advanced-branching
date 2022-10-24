@@ -115,6 +115,7 @@ func TestSwitchAddFeedback(t *testing.T) {
 // Task 12: Check for `vehicleResult[v.Name] = vehResult`
 func TestVarAppendRating(t *testing.T) {
 	testFail := false
+
 	if mainForStmt == nil {
 		testFail = true
 	} else if !checkAppendRating(mainForStmt.Body, "vehicleResult[v.Name]=vehResult") {

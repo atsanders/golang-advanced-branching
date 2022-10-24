@@ -95,7 +95,7 @@ func readJSONFile() Values {
 func generateRating() {
 	var f = readJSONFile()
 	for _, v := range f.Models {
-		var vehResult feedbackResult = vehicleResult[v.Name]
+		var vehResult feedbackResult
 		var vehRating rating
 		_ = vehRating
 		for _, msg := range v.Feedback {
@@ -126,5 +126,6 @@ func generateRating() {
 
 			}
 		}
+		vehResult = vehicleResult[v.Name]
 	}
 }
